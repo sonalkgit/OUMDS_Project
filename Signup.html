@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<link rel="stylesheet" type="text/css" href="css/login.css">
+		<script>
+			function openWin()
+			{
+				window.open("C:/Users/Admin/Desktop/SDP/voter login.html")
+			}
+		</script>
+</head>
+<body style="background-image: url('img/Login_background.jpg');">
+
+	<div class="SignUpbox">
+			<h2>Sign Up</h2>
+            <form action="oumds_signup_user.php" method="post">
+            Enter Name: <input type="text" name="user-name"><br>
+            Email: <input type="text" name="user-mail"><br>
+            Password: <input type="password" name="user-password"><br>
+            Age: <input type="number" name="user-age"><br>
+            Gender: Male <input type="radio" name="user-gender">
+            Female <input type="radio" name="user-gender"><br>
+            Contact Number: <input type="number" name="user-number"><br>
+            Blood Group:<select name="user-blood">
+                <option>A +ve</option>
+                <option>A -ve</option>
+                <option>B +ve</option>
+                <option>B -ve</option>
+                <option>AB +ve</option>
+                <option>AB -ve</option>
+                <option>O +ve</option>
+                <option>O _ve</option>
+
+            </select><br>
+            Address: <input type="text" name="user-address"><br>
+            Create Account:<input type="submit" name="create">
+            Reset:<input type="reset" name="reset" >
+        </form>
+        
+	</div>
+</body>
+</html>

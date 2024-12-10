@@ -1,0 +1,196 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <title>User</title>  
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+  <style>
+  body{
+    background-image: url(img/donate.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover; height: 620px; width: 1000px;
+    white-space: nowrap;
+    line-height: 30px;
+               
+  } 
+  ul {
+            margin: 0 10%;
+            padding: 10px 0px 10px 80px;
+            display: flex;
+            background: indianred;
+        }
+  
+        ul li {
+            list-style: none;
+            padding: 10px 20px;
+  
+        }
+  
+        ul li a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+            position: relative;
+  
+        }
+  
+        ul li a::before {
+            content: "";
+            width: 0px;
+            height: 10px;
+            background: black;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .5s;
+        }
+  
+        ul li a:hover::before {
+            width: 50%;
+            transform: translateX(100%);
+        }
+</style>
+</head>  
+<body>  
+  
+<div class="container">  
+  <ul class="nav nav-tabs">  
+    <li class="active"><a  href="request_view_page.php">Requested Medicines</a></li>  
+    <li><a data-toggle="tab" href="#RegisteredNGO">Registered NGO's</a></li>  
+    <li><a data-toggle="tab" href="#DonateMedicines">Donate Medicines</a></li>  
+    <li><a data-toggle="tab" href="#MyDonations">My Donations</a></li>  
+  </ul>  
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="tab-content">  
+    <div id="Requested Medicines" class="tab-pane fade in active" >  
+       <table border ="10" ><tr>
+           <td>ID</td>
+           <td>Full Name</td>
+           <td>Email Id</td>
+           <td>Contact No.</td>
+           <td>Address</td>
+           <td>Country</td>
+           <td>Brand name</td>
+           <td>Generic name</td>
+           <td>Quantity</td>
+           <td>Medicine Type</td>
+           <td>Donate</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td>Samira Shaikh</td>
+        <td>samirashaikh487@gmail.com</td>
+        <td>+91 8000011111</td>
+        <td>Dadar(east), Mumbai, MH, 400086 </td>
+        <td>India</td>
+        <td>Crocin</td>
+        <td>Getwack</td>
+        <td>50</td>
+        <td>Tablet</td>
+        <td>Donate</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Rohan Shah</td>
+        <td>rohanshah87@gmail.com</td>
+        <td>+91 0012940021</td>
+        <td>Anderi, Mumbai, Maharashtra, 400045</td>
+        <td>India</td>
+        <td>Paracetemol</td>
+        <td>Ziplox</td>
+        <td>25</td>
+        <td>Tablet</td>
+        <td>Donate</td>
+    </tr>
+</table>
+     
+      
+    </div>  
+
+    <div id="RegisteredNGO" class="tab-pane fade" >  
+      <div class="column" >
+       <table border="5">
+           <tr>
+               <td>ID</td>
+               <td>NGO Name</td>
+               <td>Email ID</td>
+               <td>Address</td>
+               <td>Contact</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>NGO 1</td>
+            <td>ngo1@gmail.com</td>
+            <td>Anderi west, Mumbai</td>
+            <td>7896543210</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>NGO 2</td>
+            <td>ngo2@gmail.com</td>
+            <td>Thane, Mumbai, MH, 400087</td>
+            <td>+91 9876543217</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>NGO 3</td>
+            <td>ngo3@gmail.com</td>
+            <td>Ghatkopar, Mumbai, MH, 400087</td>
+            <td>+91 786954320</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Old Age Home</td>
+            <td>oldhomes@gmail.com</td>
+            <td>Anderi, Mumbai, MH, 400065</td>
+            <td>+91 987654532</td>
+        </tr>
+       </table>
+    </div>
+</div>  
+       
+    <div id="DonateMedicines" class="tab-pane fade">  
+      
+      
+       
+    </div>  
+    <div id="MyDonations" class="tab-pane fade">  
+      <table border="5">
+          <tr>
+              <td>ID</td>
+              <td>Name</td>
+              <td>EmailID</td>
+              <td>Medicine Brand Name</td>
+              <td>Medicine Generic Name</td>
+              <td>Quantity</td>
+              <td>Expiry date</td>
+              <td>Medicine Type</td>
+              <td>Donation Type</td>
+              <td>Reciever's email ID</td>
+           </tr>
+           <tr>
+            <td>7</td>
+            <td>Samira Shaikh</td>
+            <td>samirashaikh487@gmail.com</td>
+            <td>xyz</td>
+            <td>abcd</td>
+            <td>50</td>
+            <td>2023-07-27</td>
+            <td>Tablet</td>
+            <td>NGO</td>
+            <td>oldhomes@gmail.com</td>
+         </tr>
+      </table>
+     
+    </div>  
+  </div>  
+</div>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+</body>  
+</html>  
